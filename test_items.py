@@ -12,7 +12,7 @@ def test_authorization_stepik(browser):
 
     wait = WebDriverWait(browser, 5)
 
-    button = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '[type="submit"]')))
+    button = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '[value="Add to basket"]')))
     assert button is not None, "Element not found"
 
     time.sleep(5)
